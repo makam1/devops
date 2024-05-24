@@ -1,14 +1,6 @@
 pipeline {
     agent any
     stages {
-        stage('Connect to github') {
-            steps {
-               git (
-                    url: "https://github.com/makam1/devops.git",
-                    branch: "main"
-                )
-            }
-        }
         stage('Build Artefact') {
             steps {
                sh "mvn clean package -DskipTest=true"
