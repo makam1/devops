@@ -15,7 +15,7 @@ public class DemoBootApplication {
 
 	@GetMapping("/hello")
 	public String hello(){
-		return "<h2> Hello BCEAO v1 </h2>";
+		return "<h2> Hello BCEAO v2 </h2>";
 	}
 
 }
